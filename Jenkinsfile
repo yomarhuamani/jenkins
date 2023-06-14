@@ -13,6 +13,7 @@ pipeline {
             }
         post{
             always{
+                deleteDir()
                 sh "echo 'This will always run'"
             }
             success{
