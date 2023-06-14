@@ -19,8 +19,7 @@ pipeline {
             }
         post{
             always{
-                deleteDir()
-                    sh "echo 'This will always run'"
+                sh "echo 'This will always run'"
             }
             success{
                 sh "echo 'This will run only if successful'"
