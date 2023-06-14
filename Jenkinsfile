@@ -10,7 +10,7 @@ pipeline {
         appName = 'dockerweb'
     }
 
-    stages (){
+    stages{
         stage("step one"){
             steps {
                 script {
